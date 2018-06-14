@@ -30,14 +30,14 @@ convert /sys/firmware/acpi/bgrt/image theme/bgrt.png
 # Finally, install the theme
 
 install -d ${GRUB_DIR}/${GRUB_THEME}
-install -m644 theme/{dejavu_12,dejavu_bold_14}.pf2 ${GRUB_DIR}/${GRUB_THEME}/
-install -m644 theme/bgrt.png ${GRUB_DIR}/${GRUB_THEME}/
+install -m644 theme/dejavu_{12,${FONTSIZE},bold_${FONTSIZE}}.pf2 ${GRUB_DIR}/${GRUB_THEME}/
+install -m644 theme/{bgrt,background}.png ${GRUB_DIR}/${GRUB_THEME}/
 install -d ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
 install -m644 theme/progress_bar/progress_bar_{c,hl_c,hl_n}.png ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
 install -m644 theme/theme.txt ${GRUB_DIR}/${GRUB_THEME}/
 
 echo "Install complete."
 echo "To use this theme, add:"
-echo "   GRUB_THEME=${GRUB_THEME}"
+echo "   GRUB_THEME=${GRUB_DIR}/${GRUB_THEME}/theme.txt"
 echo "to your grub config (e.g. /etc/default/grub),"
 echo "then rebuild grub (e.g. update-grub)."
