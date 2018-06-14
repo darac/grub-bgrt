@@ -13,7 +13,7 @@ To change the font in the theme, try something like:
 
 ## License
 
-All the files in this project are distributed under the [GNU General Public License](./LICENSE.txt).
+All the files in this project are distributed under the [GNU General Public License](./LICENSE).
 
 ## Author
 

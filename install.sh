@@ -23,21 +23,21 @@ convert /sys/firmware/acpi/bgrt/image theme/bgrt.png
 < theme/theme.txt.in awk \
 	-v BGRTLEFT=$(</sys/firmware/acpi/bgrt/xoffset) \
 	-v BGRTTOP=$(</sys/firmware/acpi/bgrt/yoffset) \
-	'gsub (/\$BGRTLEFT\$/, BGRTLEFT);
-	 gsub (/\$BGRTTOP\$/, BGRTTOP);
-	 print' > theme/theme.txt
+	'{gsub (/\$BGRTLEFT\$/, BGRTLEFT);
+	  gsub (/\$BGRTTOP\$/, BGRTTOP);
+	  print}' > theme/theme.txt
 
 # Finally, install the theme
 
-install -d $(GRUB_DIR)/$(GRUB_THEME)
-install -m644 theme/{dejavu_12,dejavu_bold_14}.pf2 $(GRUB_DIR)/$(GRUB_THEME)/
-install -m644 theme/bgrt.png $(GRUB_DIR)/$(GRUB_THEME)/
-install -d $(GRUB_DIR)/$(GRUB_THEME)/progress_bar/
+install -d ${GRUB_DIR}/${GRUB_THEME}
+install -m644 theme/{dejavu_12,dejavu_bold_14}.pf2 ${GRUB_DIR}/${GRUB_THEME}/
+install -m644 theme/bgrt.png ${GRUB_DIR}/${GRUB_THEME}/
+install -d ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
 install -m644 theme/progress_bar/progress_bar_{c,hl_c,hl_n}.png
-install -m644 theme/theme.txt $(GRUB_DIR)/$(GRUB_THEME)/
+install -m644 theme/theme.txt ${GRUB_DIR}/${GRUB_THEME}/
 
 echo "Install complete."
 echo "To use this theme, add:"
-echo "   GRUB_THEME=$(GRUB_THEME)"
+echo "   GRUB_THEME=${GRUB_THEME}"
 echo "to your grub config (e.g. /etc/default/grub),"
 echo "then rebuild grub (e.g. update-grub)."
