@@ -33,7 +33,7 @@ install -d ${GRUB_DIR}/${GRUB_THEME}
 install -m644 theme/{dejavu_12,dejavu_bold_14}.pf2 ${GRUB_DIR}/${GRUB_THEME}/
 install -m644 theme/bgrt.png ${GRUB_DIR}/${GRUB_THEME}/
 install -d ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
-install -m644 theme/progress_bar/progress_bar_{c,hl_c,hl_n}.png
+install -m644 theme/progress_bar/progress_bar_{c,hl_c,hl_n}.png ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
 install -m644 theme/theme.txt ${GRUB_DIR}/${GRUB_THEME}/
 
 echo "Install complete."
