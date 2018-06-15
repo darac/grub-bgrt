@@ -6,7 +6,7 @@ title-text: ""
 desktop-color: "#000"
 desktop-image: "background.png"
 
-terminal-font: "DejaVu Sans Regular 12"
+terminal-font: "DejaVu Sans Mono Regular 12"
 terminal-left: "50%-320"
 terminal-top: "75%-240"
 terminal-width: "640"
@@ -41,9 +41,9 @@ terminal-border: "0"
     top = 75%-240
     height = 480
 
-    item_font = "DejaVu Sans Bold 24"
+    item_font = "Lato Regular 24"
     item_color = "#999"
-    selected_item_font = "DejaVu Sans Bold 24"
+    selected_item_font = "Lato Regular 24"
     selected_item_color= "#fff"
 
     item_height = 30
