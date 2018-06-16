@@ -21,6 +21,10 @@ To change the font in the theme, try something like:
 
 (-a adds antialiasing, -s 12 sets the size to 12). Don't forget to update the `theme.txt.in` as well.
 
+## Plymouth Theme
+
+You may also want to pair this with my [plymouth theme](/darac/plymouth-bgrt).
+
 ## License
 
 All the files in this project are distributed under the [GNU General Public License](./LICENSE).
