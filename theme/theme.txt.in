@@ -8,11 +8,11 @@ desktop-image: "background.png"
 
 # Terminal is low and wide
 terminal-font: "DejaVu Sans Mono Regular 12"
-terminal-left: "100"
-terminal-top: "100%-580"
-terminal-width: "100%-200"
+terminal-left: "50"
+terminal-top: "100%-530"
+terminal-width: "100%-100"
 terminal-height: "480"
-terminal-border: "1"
+terminal-border: "0"
 
 #progress bar
 + progress_bar {

@@ -34,7 +34,7 @@ install -m644 theme/dejavu-mono-12.pf2 ${GRUB_DIR}/${GRUB_THEME}/
 install -m644 theme/lato-${FONTSIZE}.pf2 ${GRUB_DIR}/${GRUB_THEME}/
 install -m644 theme/{bgrt,background}.png ${GRUB_DIR}/${GRUB_THEME}/
 install -d ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
-install -m644 theme/progress_bar/progress_bar_{c,hl_c,hl_n}.png ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
+install -m644 theme/progress_bar/progress_bar_{nw,n,ne,w,c,e,sw,s,se,hl_c}.png ${GRUB_DIR}/${GRUB_THEME}/progress_bar/
 install -m644 theme/theme.txt ${GRUB_DIR}/${GRUB_THEME}/
 
 echo "Install complete."
