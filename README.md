@@ -6,9 +6,9 @@ A theme for GRUB2 which uses your system's UEFI logo (aka BGRT).
 ## Installation
 
 ```sh
-	# ./install.sh	# Fetches your BGRT, adjusts the theme to suit and installs it.
-    # echo GRUB_THEME=grub-bgrt >> /etc/default/grub
-	# update-grub
+    sudo ./install.sh	# Fetches your BGRT, adjusts the theme to suit and installs it.
+    echo GRUB_THEME=grub-bgrt | sudo tee -a /etc/default/grub
+    sudo update-grub
 ```
 
 ## Font
