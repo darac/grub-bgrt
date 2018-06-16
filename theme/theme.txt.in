@@ -6,24 +6,28 @@ title-text: ""
 desktop-color: "#000"
 desktop-image: "background.png"
 
+# Terminal is low and wide
 terminal-font: "DejaVu Sans Mono Regular 12"
-terminal-left: "50%-320"
-terminal-top: "75%-240"
-terminal-width: "640"
+terminal-left: "100"
+terminal-top: "100%-580"
+terminal-width: "100%-200"
 terminal-height: "480"
-terminal-border: "0"
+terminal-border: "1"
 
 #progress bar
 + progress_bar {
+
+	# Progress box is 100x16
+	# Progress bar is  96x12 (i.e. border of 2 pixels)
+
     id = "__timeout__"
-    left = 0
-    top = 0
-    height = 15
-    width = 100%
+    left = 50%-50
+    top = 90%-8
+    width = 100
+    height = 16
     show_text = false
 
-    # just two vertical pixels of color #1793d1
-    bar_style = "progress_bar/progress_bar_*.png"
+    bar_style       = "progress_bar/progress_bar_*.png"
     highlight_style = "progress_bar/progress_bar_hl_*.png"
 }
 
