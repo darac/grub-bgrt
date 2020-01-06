@@ -23,7 +23,7 @@ To change the font in the theme, try something like:
 
 ## Plymouth Theme
 
-You may also want to pair this with my [plymouth theme](/darac/plymouth-bgrt).
+You may also want to pair this with my [plymouth theme](https://github.com/darac/plymouth-bgrt).
 
 ## License
 
