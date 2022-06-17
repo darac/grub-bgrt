@@ -17,7 +17,7 @@ command -v install >/dev/null 2>&1 || { echo >&2 "I require install (from coreut
 command -v awk >/dev/null 2>&1 || { echo >&2 "I require awk but it's not installed.  Aborting."; exit 1; }
 
 # OK. Convert the image to PNG (grub doesn't support BMPs)
-convert /sys/firmware/acpi/bgrt/image theme/bgrt.png
+convert /sys/firmware/acpi/bgrt/image PNG24:theme/bgrt.png
 
 # Replace the placeholders with the image offsets
 < theme/theme.txt.in awk \
